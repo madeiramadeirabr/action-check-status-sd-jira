@@ -1,4 +1,4 @@
-name: 'service desk status'
+name: 'Action check status sd jira'
 description: 'service desk status check'
 inputs:  
   url-jira:
