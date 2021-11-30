@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: action-check-status-sd-jira
+  annotations:
+    github.com/project-slug: madeiramadeirabr/action-check-status-sd-jira
+spec:
+  type: other
+  lifecycle: unknown
+  owner: SRE
