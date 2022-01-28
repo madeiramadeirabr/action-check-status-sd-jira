@@ -3,7 +3,7 @@
 
 ## Descrição:
 Action que valida:
-- Status da Issue no Jira
+- Status do Service Desk realizando requisição na API do Jira
 
 ## Contexto de negócio:
 Irá compor a estrutura padrão que está sendo desenvolvida para o CI/CD da [MadeiraMadeira](https://github.com/madeiramadeirabr 'MadeiraMadeira'), sendo aplicável a todos os Projetos Novos (e "antigos").
@@ -31,16 +31,13 @@ on:
       - production
 
 jobs:
-  check-status-sd-jira:
+  check-existence-jira-issue:
     runs-on: ubuntu-latest     
-    outputs:
-      output1: ${{ steps.title.outputs.TITLE }}
-    name: 'Check the issue status in jira'
-    needs: check-existence-jira-issue
+    name: 'Check the jira for an issue'
     steps:
-      - name: 'check status issue'
-        uses: madeiramadeirabr/action-check-status-sd-jira1
+      - name: 'check jira issue'
+        uses: madeiramadeirabr/action-check-jira-issue@v1
         with:
-          url-jira:  'https://madeiramadeira.atlassian.net/rest/api/3/issue/${{ steps.title.outputs.TITLE }}'
-          basic-auth: ${{ secrets.GLOBALS_SRE_BASIC_AUTH_JIRA }}          
+          url-jira:  'https://madeiramadeira.atlassian.net/rest/api/3/issue/CCC-123'
+          basic-auth: ${{ secrets.GLOBALS_SRE_BASIC_AUTH_JIRA }}        
 ```
