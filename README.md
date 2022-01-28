@@ -1,4 +1,4 @@
-![img](https://github.com/madeiramadeirabr/action-check-status-sd-jira/blob/staging/img/action-check-status-sd-jira.svg)
+![img](https://github.com/madeiramadeirabr/action-check-status-sd-jira/blob/production/img/action-check-status-sd-jira.svg)
 # action-check-status-sd-jira
 
 ## Descrição:
