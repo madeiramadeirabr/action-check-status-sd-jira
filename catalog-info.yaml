@@ -2,17 +2,15 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: action-check-status-sd-jira
-  description: |
-    Github Action que valida o status de um ticket no Service Desk do Jira.
+  description: Github Action que valida o status de um ticket no Service Desk do Jira.
   annotations:
     github.com/project-slug: madeiramadeirabr/action-check-status-sd-jira
     sonarqube.org/project-key: madeiramadeirabr/action-check-status-sd-jira
-    backstage.io/techdocs-ref: dir:.
   tags:
   - javascript
   - github-action
 spec:
   type: library
   lifecycle: production
-  owner: team-platform-services
+  owner: team-platform-engineering-admin
 
